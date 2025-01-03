@@ -1,0 +1,350 @@
+body{
+    scroll-behavior: smooth;
+}
+#bg{
+    position: absolute;
+}
+  
+/* From Uiverse.io by kennyotsu */ 
+.rotator {
+    /* color used to softly clip top and bottom of the .words container */
+    
+    background-color: var(--bg-color);
+    padding: 3px 5px;
+    border-radius: 8px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .loader {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 25px;
+    padding: 3px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+  }
+  
+  .words {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  .words::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+  }
+  
+  .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #fad9c7;
+    animation: spin_4991 4s infinite;
+  }
+  
+  @keyframes spin_4991 {
+    10% {
+      -webkit-transform: translateY(-102%);
+      transform: translateY(-102%);
+    }
+  
+    25% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  
+    35% {
+      -webkit-transform: translateY(-202%);
+      transform: translateY(-202%);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-200%);
+      transform: translateY(-200%);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-302%);
+      transform: translateY(-302%);
+    }
+  
+    75% {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+    }
+  
+    85% {
+      -webkit-transform: translateY(-402%);
+      transform: translateY(-402%);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-400%);
+      transform: translateY(-400%);
+    }
+  }
+  .page2 {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.page{
+    height:105vh;
+}
+.page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page2{
+    height:305vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page3{
+    height:75vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:end;
+}
+#intro>*{
+    text-align: center;
+    color: antiquewhite !important;
+}
+#intro>h2{
+    font-size: 60px;
+    margin-bottom: 20px !important;
+}
+#intro>h1{
+    font-size: 70px;
+    margin-bottom: 30px !important;
+    margin-top: 20px !important;
+}
+.headings{
+    text-align: center;
+    color: antiquewhite !important;
+    font-size: 40px;
+}
+
+
+.card {
+    width: 980px;
+    height: 620px !important;
+    padding: 0.5rem;
+    background: rgba(198, 198, 198, 0.34);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+    transform: skewX(6deg);
+    transition: .4s;
+    overflow: hidden;
+    color:antiquewhite;
+    margin:30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card:hover {
+    height: 854px;
+    transform: skew(0deg);
+  }
+  
+  .align {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-start;
+  }
+  
+  .card h1 {
+    font-size: 45px;
+    text-align: left;
+    margin: 1.3rem;
+    color: rgb(254, 245, 205);
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+    display: inline;
+  }
+  .card p{
+    font-size: 27px;
+  }
+  .card a{
+    font-size: 27px;
+    color: antiquewhite;
+  }
+  .texts{
+    display:inline-block;
+    width: 50%;
+    margin: 30px;
+  }
+  img{
+    margin:10px 30px 10px 10px;
+    height:400px;
+    width:350px;
+    border-radius: 5%;
+  }
+
+
+
+
+.button {
+    --width: 300px;
+    --height: 35px;
+    --button-color: #9e9e9f00;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    color: antiquewhite;
+    font-size: 23px;
+    transition: background 0.3s;
+    margin:25px;
+    margin-bottom: 60px !important;
+    display: inline-block;
+  }
+  
+  .button::before {
+    position: absolute;
+    font-size: 0.9rem;
+    color: #111;
+    border-radius: .25em;
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    left: calc(50% - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: antiquewhite;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.4s;
+  }
+  
+  .icon {
+    color: antiquewhite;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #8b8b8b00;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+
+
+.playstore-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #323232;
+    border-radius: 9999px;
+    background-color: rgba(98, 98, 98, 0.372);
+    padding: 0.625rem 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.811);
+    outline: 0;
+    transition: all  .2s ease;
+    text-decoration: none;
+  }
+  
+  .playstore-button:hover {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  .button_text {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  
+  .text-1 {
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  
+  .text-2 {
+    font-weight: 600;
+  }
+  
