@@ -1,14 +1,13 @@
 body{
     scroll-behavior: smooth;
+    background: linear-gradient(180deg, rgba(59,48,48,1) 3%, rgba(113,76,76,1) 52%, rgba(126,93,93,1) 100%);
+    background-attachment: fixed;
 }
 #bg{
     position: absolute;
 }
   
-/* From Uiverse.io by kennyotsu */ 
 .rotator {
-    /* color used to softly clip top and bottom of the .words container */
-    
     background-color: var(--bg-color);
     padding: 3px 5px;
     border-radius: 8px;
@@ -47,7 +46,7 @@ body{
     display: block;
     height: 100%;
     padding-left: 6px;
-    color: #fad9c7;
+    color: #FFF0D1;
     animation: spin_4991 4s infinite;
   }
   
@@ -132,7 +131,7 @@ body{
 }
 #intro>*{
     text-align: center;
-    color: antiquewhite !important;
+    color: #FFF0D1 !important;
 }
 #intro>h2{
     font-size: 60px;
@@ -145,7 +144,7 @@ body{
 }
 .headings{
     text-align: center;
-    color: antiquewhite !important;
+    color: #FFF0D1 !important;
     font-size: 40px;
 }
 
@@ -160,10 +159,10 @@ body{
     border-bottom: 3px solid rgba(255, 255, 255, 0.440);
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-    transform: skewX(6deg);
+    
     transition: .4s;
     overflow: hidden;
-    color:antiquewhite;
+    color:#FFF0D1;
     margin:30px;
     display:flex;
     flex-direction: row;
@@ -173,7 +172,7 @@ body{
   
   .card:hover {
     height: 854px;
-    transform: skew(0deg);
+    transform: scale(1.02);
   }
   
   .align {
@@ -188,8 +187,8 @@ body{
     font-size: 45px;
     text-align: left;
     margin: 1.3rem;
-    color: rgb(254, 245, 205);
-    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+    color:#FFF0D1;
+    text-shadow: -10px 5px 10px rgba(67, 67, 67, 0.573);
     display: inline;
   }
   .card p{
@@ -197,7 +196,7 @@ body{
   }
   .card a{
     font-size: 27px;
-    color: antiquewhite;
+    color:#FFF0D1;
   }
   .texts{
     display:inline-block;
@@ -211,7 +210,9 @@ body{
     border-radius: 5%;
   }
 
-
+.page3>header>h2{
+  margin-bottom: 25px !important;
+}
 
 
 .button {
@@ -224,10 +225,10 @@ body{
     position: relative;
     text-align: center;
     border-radius: 0.45em;
-    color: antiquewhite;
+    color:#FFF0D1;
     font-size: 23px;
     transition: background 0.3s;
-    margin:25px;
+    margin-top: 0px;
     margin-bottom: 60px !important;
     display: inline-block;
   }
@@ -266,7 +267,7 @@ body{
     width: 100%;
     height: 100%;
     left: 0;
-    color: antiquewhite;
+    color: #FFF0D1;
   }
   
   .text {
@@ -278,16 +279,11 @@ body{
   }
   
   .icon {
-    color: antiquewhite;
+    color:#FFF0D1;
     top: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .icon svg {
-    width: 24px;
-    height: 24px;
   }
   
   .button:hover {
@@ -310,13 +306,13 @@ body{
 
 
 
-.playstore-button {
+.github-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 2px solid #323232;
-    border-radius: 9999px;
-    background-color: rgba(98, 98, 98, 0.372);
+    border-radius: 14px;
+    background-color: #8b686884;
     padding: 0.625rem 1.5rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.811);
@@ -325,13 +321,13 @@ body{
     text-decoration: none;
   }
   
-  .playstore-button:hover {
+  .github-button:hover {
     background-color: transparent;
-    color: rgba(0, 0, 0, 1);
+    color:#f1d4af;
   }
   
   .button_text {
-    margin-left: 1rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -345,6 +341,6 @@ body{
   }
   
   .text-2 {
-    font-weight: 600;
+    font-weight: 550;
   }
   
